@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alex Stedman</title>
+    <style>
+        @media screen and (min-width: 700px){
+
+        }
+        body {
+            background: #536E7F;
+        }
+        .Projects {
+            outline-style: groove;
+            outline-color: #525566;
+            outline-width: medium;
+            position: relative;
+            display: inline-block;
+            background-color: #a1a6b9;
+            min-width: 120px;
+            box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+
+        }
+        .All-Projects {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .Projects:hover .All-Projects {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<?php echo "hello";?>
+<div class="Projects">
+    <span>Mouse over me</span>
+    <div class="All-Projects">
+        <p>Hello World!</p>
+    </div>
+</div>
+</body>
+</html>
